@@ -1,0 +1,127 @@
+*{
+    /* transition: background-color 1s ease-in-out, color 1s ease-in-out */
+}
+
+#about{
+    background-color:var(--bglightabout);
+    width:100vw;
+    box-sizing: border-box;
+    padding:0px 40px;
+    padding-bottom: 50px;
+}
+
+#about>p:first-child{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color:var(--plight); 
+    padding-top: 50px;
+}
+
+#about>p:first-child::after{
+    content: 'Me';
+    color:var(--namelight)
+}
+
+#myselfdesc{
+    margin-top:30px;
+    order:1
+}
+
+#mysitem{
+display: flex;
+gap:10px;
+margin-bottom:15px;
+}
+#mysitem>div{
+    margin-top:2px;
+}
+
+#mysitem>p{
+  color:var(--plight);
+  font-size: 13.7px;
+  text-align: justify;
+  opacity: 0.9;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+#mysitem>p>span{
+    color:var(--namelight);
+}
+
+#myimg{
+    display:flex;
+    justify-content: center;
+    padding-top: 40px;
+    align-items: center;
+}
+
+#myimg>img{
+    width:40%;
+    border-radius: 20px;
+}
+
+@media all and (min-width:765px){
+    #mysitem>p{
+        font-size: 14.2px;
+        font-weight: 600;
+    }
+}
+
+@media all and (min-width:895px){
+    #mysitem>p{
+        font-size: 14.9px;;
+    }
+}
+
+@media all and (min-width:970px) {
+    #about{
+        padding:0px 40px;
+        padding-bottom: 50px;
+    }
+    #aboutcontent{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #myselfdesc{
+        width:65%
+    }
+
+    #mysitem>p{
+        font-size: 15.5px;;
+    }
+
+    #myimg{
+        padding:0px;
+        justify-content:space-around;
+        width:29%;
+    }
+
+    #myimg>img{
+        width:90%;
+    }
+}
+
+@media all and (min-width:1080px) {
+
+    #mysitem>p{
+        font-size: 18px;;
+    }  
+}
+
+@media all and (max-width:500px){
+    #about{
+        padding:0px 30px;
+        padding-bottom:28px;
+    }
+    #about>p:first-child{
+        padding-top:25px;
+    }
+}
+@media all and (max-width:450px){
+    #about>p:first-child{
+        font-size:27px;
+    }
+}

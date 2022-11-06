@@ -1,0 +1,191 @@
+*{
+    /* transition:background 1s ease-in-out */
+}
+.nav{
+    padding: 12px 30px 0px;
+    display:flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition:padding 0.4s linear;
+    /* border-bottom: 2px solid var(--navTextHover); */
+    position:fixed;
+    top:0px;
+    width:100vw;
+    box-sizing: border-box;
+    background-color: var(--backgroundnav);
+    /* box-shadow: 0.1px 0.1px 10px -3px var(--navTextHover) */
+}
+
+.nav>div>svg{
+    cursor:pointer;
+    margin-top:5px;
+}
+
+.navButtons{
+    color:var(--navText);
+    display:flex;
+    gap:0vw 10px;
+    margin-top: -10px;
+    font-size: 15px;
+    font-weight: 550;
+    align-items: center;
+}
+
+.navButtons a{
+    text-decoration: none;
+    color:var(--navText);
+    font-family:sans-serif;
+    padding:12px 15px;
+    border-radius:5px;
+    transition: background-color 0.6s linear
+}
+
+.navButtons a:hover{
+    color:var(--hover);
+    background:var(--navTextHover);
+    cursor: pointer;
+}
+
+.navButtons>p:nth-child(6)>a{
+    border: 1px solid var(--navTextHover);
+    padding:10px 25px;
+    border-radius:5px;
+    font-size:15px;
+    color:var(--navText);
+    margin-right: 10px;
+    background:var(--navTextHover);
+    display:flex;
+    gap:2px;
+}
+
+.navButtons>p:nth-child(6)>a:hover{
+    color:var(--hover);
+}
+
+/* .navButtons>i{
+} */
+
+.navDrawer{
+    display:none;
+    gap:10px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+i{
+    cursor:pointer;
+    padding:10px 10px 6px 10px;
+    border-radius: 5px;
+    /* transition: background 0.4s linear */
+}
+
+.fas:hover, .fa:hover{
+    background:#23293541
+}
+
+.navDrawerBackdrop{
+    display:none;
+    position:fixed;
+    height:100vh;
+    width:150vw;
+    top:0px;
+    left:0px;
+    z-index: 10;
+    background-image:linear-gradient(to bottom,var(--back1),var(--back2));
+    backdrop-filter: blur(5px);
+    justify-content: space-between;
+}
+
+.navDrawerBackdrop svg{
+    padding: 5px 0px 0px 20px;
+}
+
+.drawerCont{
+    padding:15px 20px 0px;
+    width:300px;
+    height:100vh;
+}
+.drawerCont a{
+    text-decoration: none;
+    color:var(--navText);
+    font-family:sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding:12px 15px;
+    border-radius:5px;
+    /* transition: background-color 0.6s linear */
+}
+
+.drawerCont p{
+    width:fit-content;
+    margin:auto;
+    margin-top:35px;
+    letter-spacing: 0.5px;
+}
+
+.drawerCont a:hover{
+    color:var(--hover);
+    background:var(--navTextHover);
+    cursor: pointer;
+}
+
+.drawerCont>p:last-child>a{
+    border: 1px solid var(--navTextHover);
+    padding:15px 35px;
+    border-radius:5px;
+    font-size:16px;
+    color:var(--navText);
+    background:var(--navTextHover);
+    display:flex;
+    align-items: center;
+    gap:6px;
+}
+
+.drawerCont>p:last-child>a:hover{
+    color:var(--hover)
+}
+
+.drawerCont>p:last-child{
+    /* margin-top: 50px; */
+}
+
+@media all and (max-width: 950px){
+    .navButtons{
+        gap:5px
+    }
+    .navButtons a{
+        font-size: 13px;
+        padding:9px 12px;
+    }
+    .navButtons>p:nth-child(6)>a{
+        border: 1px solid var(--navTextHover);
+        padding:12px 20px;
+        border-radius:5px;
+        font-size:13px;
+        /* color:var(--navTextHover); */
+    }
+}
+
+
+@media all and (max-width: 795px) {
+    .navButtons{
+        display:none;
+    }
+    .nav{
+        padding:10px 20px 0px
+    }
+}
+
+@media all and (max-width:795px){
+    .navDrawer{
+        display:flex;
+    }
+}
+
+@media all and (min-width:795px){
+    .navDrawerBackdrop{
+        display:none !important;
+    }
+}

@@ -1,0 +1,412 @@
+#contact {
+    background-color: var(--bglightproject);
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0px 40px;
+    padding-bottom: 25px;
+    /* transition: color 1s ease-in-out; */
+}
+
+#contact>p:first-child {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--plight);
+    padding-top: 50px;
+}
+
+#contact>p:first-child>span {
+    color: var(--namelight);
+}
+
+#contImg {
+    width: 80%;
+    background-image: url('https://raw.githubusercontent.com/surajkm24/surajkm24.github.io/8e64c8653d214bfb36066f571077e311e5ae671a/assets/contact-me.svg');
+    padding-top: 52%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 2%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#contForm {
+    margin-top: 45px;
+}
+
+#smButt,#tel {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+}
+
+#tel button{
+    border: none;
+    background-color: #dc143c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    padding:5px 10px;
+    border-radius: 5px;
+    opacity: 0.85;
+}
+
+#tel button:hover{
+    cursor:pointer;
+    opacity:1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.smButIc {
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    border: none;
+    padding: 5px 11px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    opacity: 0.9
+}
+
+.smButIc:hover {
+    opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#contForm2>form {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+#contForm2>form>input,
+#contForm2>form>textarea {
+    width: 400px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 30px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+#contForm2>form>textarea {
+    height: 160px;
+}
+
+#contForm2>form>input:last-child {
+    font-size: 16px;
+    font-weight: 600;
+    background: #dc143c;
+    color: white;
+}
+
+#contForm2>form>input[type='submit']:hover {
+    background: rgb(24, 24, 130);
+    cursor: pointer;
+}
+
+#failbox {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#sucbox {
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#failureAlert {
+    display: flex;
+    gap: 10px;
+    background: tomato;
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right:40px
+}
+
+#failureAlert>span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    color: tomato;
+    text-align: center;
+}
+
+#successAlert {
+    display: flex;
+    gap: 10px;
+    background: rgb(11, 132, 82);
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: whitesmoke;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right:40px;
+}
+
+#successAlert>span {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: white;
+    color: rgb(11, 132, 82);
+    text-align: center;
+}
+
+@media all and (min-width:795px) {
+    /* #contactCont {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 36px;
+        justify-content: space-between;
+    } */
+
+    #contImg {
+        width: 45%;
+        padding-top: 28%;
+        margin-top: 0px;
+        height: fit-content;
+        margin: auto;
+    }
+
+    #contForm {
+        margin-top: 0px;
+    }
+}
+
+
+@media all and (min-width:960px) {
+    #contact {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    /* #contactCont {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-top: 44px;
+        justify-content: space-between;
+    } */
+
+    #contImg {
+        width: 50%;
+        padding-top: 31%;
+
+    }
+
+    #contForm {
+        width: 50%;
+        margin-top: 0px;
+    }
+}
+
+@media all and (max-width:600px) {
+    #contImg {
+        width: 70%;
+        padding-top: 45%;
+        margin-top: 30px;
+    }
+
+    #contForm2>form>input,
+    #contForm2>form>textarea {
+        width: 350px;
+        border-radius: 5px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 30px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    #contForm2>form>textarea {
+        height: 150px;
+    }
+
+    #contForm2>form>input:last-child {
+        font-size: 16px;
+        font-weight: 600;
+        background: #dc143c;
+        color: white;
+    }
+
+    #smButt {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .smButIc {
+        font-weight: bold;
+        font-size: 14px;
+        letter-spacing: 0.4px;
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        opacity: 0.9
+    }
+    #tel button{
+        font-size:14px;
+        padding:5px 10px;
+    }
+}
+
+@media all and (max-width:500px) {
+    #contImg {
+        margin-top: 20px;
+    }
+
+    #contact {
+        padding: 0px 30px;
+        padding-bottom: 25px;
+        /* transition: color 1s ease-in-out; */
+    }
+
+    #contact>p:first-child {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: var(--plight);
+        padding-top: 25px;
+    }
+}
+
+@media all and (max-width:450px) {
+
+    #contact>p:first-child {
+        font-size: 25px;
+    }
+
+    #contForm2>form>input,
+    #contForm2>form>textarea {
+        width: 300px;
+        border-radius: 5px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        font-size: 15px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 30px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    #contForm2>form>textarea {
+        height: 135px;
+    }
+
+    #contForm2>form>input:last-child {
+        font-size: 15px;
+        font-weight: 600;
+        background: #dc143c;
+        color: white;
+    }
+
+    #smButt {
+        display: flex;
+        justify-content: center;
+        gap: 17px;
+        margin-bottom: 26px;
+    }
+
+    .smButIc {
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 0.3px;
+        border: none;
+        padding: 3px 8px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        opacity: 0.9
+    }
+    #tel button{
+        font-size:13px;
+        padding:3px 8px;
+    }
+}
+
+@media all and (max-width:340px) {
+
+    #contact>p:first-child {
+        font-size: 25px;
+    }
+
+    #contForm2>form>input,
+    #contForm2>form>textarea {
+        width: 250px;
+        border-radius: 5px;
+        padding: 8px 12px;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        font-size: 14px;
+        box-shadow: rgba(0, 0, 0, 0.06) 0px 10px 30px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+
+    #contForm2>form>textarea {
+        height: 120px;
+    }
+
+    #contForm2>form>input:last-child {
+        font-size: 15px;
+        font-weight: 600;
+        background: #dc143c;
+        color: white;
+    }
+
+    #smButt {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .smButIc {
+        font-weight: bold;
+        font-size: 11px;
+        letter-spacing: 0.3px;
+        border: none;
+        padding: 3px 5px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+        opacity: 0.9
+    }
+    #tel button{
+        font-size:12px;
+        padding:3px 6px;
+    }
+}

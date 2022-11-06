@@ -1,0 +1,223 @@
+*{
+
+}
+#education{
+    background-color:var(--bglighted);
+    width:100vw;
+    box-sizing: border-box;
+    padding:0px 40px;
+    padding-bottom: 50px;
+}
+
+#education>p:first-child{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color:var(--plight); 
+    padding-top: 50px;
+}
+
+#education>p:first-child>span{
+    color:var(--namelight);
+}
+
+.educard{
+    display:flex;
+    position: relative;
+    gap:10px;
+    align-items: flex-start;
+    margin-top: 34px;
+    justify-content:center;
+}
+
+#education>.educard:nth-child(2){
+    margin-top:80px;
+}
+
+.educardDet{
+    border:3px solid var(--namelight);
+    padding:15px 20px 25px;
+    border-radius: 10px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+
+.ic{
+    color:var(--namelight);
+    border:3px solid var(--namelight);
+    border-radius:50%;
+    padding:6px;
+    position: relative;
+    transition:0.7s ease-in-out;
+}
+
+.ic21,.ic22{
+    padding:0px;
+    color:var(--namelight);
+}
+
+.ic21{
+    display:none;
+}
+
+.educard>div:nth-child(1){
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.educard>div:nth-child(1)::before{
+    content:"";
+    border:2px solid var(--namelight);
+    height:25px;
+    position:absolute;
+    top:-35px;
+    left:14px;
+}
+
+.educardDet>p:first-child{
+    color:var(--namelight);
+    font-size: 20px;
+    font-weight: 600;
+}
+.educardDet>p:nth-child(2){
+    color:var(--plight);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 7px;
+}
+
+.educardDet>p:nth-child(3){
+    color:var(--plight);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 12px;
+}
+.educardDet>p:nth-child(3)>span{
+    color:var(--namelight);
+}
+.educardDet>p:last-child{
+    color:var(--plight);
+    font-weight: 500;
+    font-size: 13px;
+    opacity:0.8;
+    margin-top: 12px;
+}
+
+.date{
+    display:none;
+}
+
+@media all and (min-width:995px){
+    .date,.ic21,#edu2>.ic22{
+        display:block;
+    }
+    .ic22,#edu2>.ic21{
+        visibility: hidden;
+    }
+    #edu2>.ic22{
+        visibility: visible;
+    }
+    .educard>div:nth-child(1){
+        order:1;
+        /* transition:0.3s ease-in-out */
+    }
+    .d1,.d3,.edd2{
+        order:2;
+        /* transition:0.3s ease-in-out */
+    }
+    #edu1::before,#edu2::before, #edu3::before{
+        content:"";
+        border:2px solid var(--namelight);
+        height:25px;
+        position:absolute;
+        top:-35px;
+        left:31px;
+    }
+    .date{
+        width:40%;
+    }
+    .educardDet{
+        width:40%;
+    }
+    #edu1,#edu2,#edu3{
+        width:fit-content;
+    }
+  
+}
+
+@media all and (max-width:600px){
+    #education{
+        padding:0px 25px;
+        padding-bottom:28px;
+    }
+    #education>p:first-child{
+        padding-top:25px;
+    }
+    #education>.educard:nth-child(2){
+        margin-top:40px;
+    }
+    .ic{
+        color:var(--namelight);
+        border:2px solid var(--namelight);
+        border-radius:50%;
+        padding:3px;
+        position: relative;
+        font-size: 13px !important;
+    }
+    .educard>div:nth-child(1)::before{
+        content:"";
+        border:1px solid var(--namelight);
+        height:16px;
+        position:absolute;
+        top:-25px;
+        left:10px;
+    }
+
+    .ic22{
+        font-size: 10px;
+    }
+    .educardDet{
+        border:2px solid var(--namelight);
+        padding:10px 10px 15px;
+        border-radius: 10px;
+        width:100%;
+        box-sizing: border-box;
+    }
+    .educardDet>p:first-child{
+        color:var(--namelight);
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .educardDet>p:nth-child(2){
+        color:var(--plight);
+        font-size: 13px;
+        font-weight: 600;
+        margin-top: 5px;
+    }
+    
+    .educardDet>p:nth-child(3){
+        color:var(--plight);
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 7px;
+    }
+    .educardDet>p:nth-child(3)>span{
+        color:var(--namelight);
+    }
+    .educardDet>p:last-child{
+        color:var(--plight);
+        font-weight: 500;
+        font-size: 12px;
+        opacity:0.8;
+        margin-top: 7px;
+    }
+
+}
+
+@media all and (max-width:450px){
+    #education>p:first-child{
+        font-size:26px;
+    }
+} 

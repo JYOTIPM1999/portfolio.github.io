@@ -1,0 +1,177 @@
+#githubstats {
+    background-color: var(--bglight2stats);
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 0px 40px;
+    padding-bottom: 50px;
+}
+
+#githubstats>p:first-child {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--plight);
+    padding-top: 50px;
+}
+
+#githubstats>p:first-child>span {
+    color: var(--namelight);
+}
+
+#githubstats>p:first-child>#gitStIc {
+    transition: none !important;
+    color: var(--icColor)
+}
+
+#statCont {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+}
+
+#statCont>div {
+    width: 43%;
+    background: var(--rolelight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px
+}
+
+#statCont>div>img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.calender {
+    background: var(--rolelight);
+    width: 93%;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.calender>p {
+    width: fit-content;
+    margin: auto;
+    color: var(--namelight);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.react-activity-calendar__legend-colors svg {
+    width: 1vw !important;
+    height: 1vw !important;
+}
+
+.react-activity-calendar__legend-colors svg rect {
+    width: 1vw;
+    height: 1vw;
+}
+
+.contribution{
+    width:93%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top:30px;
+}
+.contribution>img{
+    width:100%;
+    border-radius: 10px;
+    border: none;
+}
+@media all and (max-width:950px) {
+    #statCont {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #statCont>div {
+        width: 90%;
+        min-height: 200px;
+    }
+
+    .calender {
+        width: 90%;
+    }
+
+    .calender footer span,
+    .calender footer div {
+        font-size: 13px;
+    }
+    .contribution{
+        width:90%; 
+    }
+}
+
+@media all and (max-width:770px) {
+    #statCont>div {
+        width: 90%;
+        min-height: 200px;
+    }
+
+    .calender {
+        width: 90%
+    }
+
+    .calender>p {
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width:600px) {
+    #statCont>div {
+        width: 90%;
+        min-height: 100px;
+    }
+
+    #githubstats {
+        padding: 0px 20px;
+        padding-bottom: 25px;
+    }
+
+    #githubstats>p:first-child {
+        padding-top: 25px;
+        font-size: 25px;
+    }
+
+    #statCont {
+        margin-top: 20px
+    }
+
+    .calender {
+        width: 90%
+    }
+
+    .calender>p {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width:450px) {
+    #statCont>div {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .calender {
+        width: 100%
+    }
+    .calender footer span,
+    .calender footer div {
+        font-size: 8px;
+    }
+    .contribution{
+        width:100%;
+    }
+}
