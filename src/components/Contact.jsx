@@ -5,8 +5,6 @@ import { ThemeContext } from "../context/ThemeContext";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 import { MdEmail, MdCall, MdLocationOn } from "react-icons/md";
 import { useRef } from "react";
-// import {RiContactsFill} from 'react-icons/ri';
-import { FcCallback } from "react-icons/fc";
 
 export const Contact = () => {
   const { light } = useContext(ThemeContext);

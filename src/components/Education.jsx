@@ -46,7 +46,7 @@ export const Education = () => {
           <GoTriangleRight className="ic22" />
         </div>
         <div class="educardDet edd2">
-          <p>Charted Accountancy</p>
+          <p>Chartered Accountancy</p>
           <p>Institute of Chartered Accountant of India. </p>
           <p>Bhubaneswar, Odisha</p>
           <p>2019 - 2022</p>
