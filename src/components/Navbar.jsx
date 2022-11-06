@@ -68,7 +68,7 @@ export const Navbar = () => {
       }}
     >
       <div>
-        <svg viewBox="0 0 100 120" style={{ height: "55px", width: "62px" }}>
+        {/* <svg viewBox="0 0 100 120" style={{ height: "55px", width: "62px" }}>
           <polygon
             fill={light ? "#edf2f8" : "#0a192f"}
             className="Shape"
@@ -86,9 +86,15 @@ export const Navbar = () => {
             fontSize="50px"
             fontWeight="640"
           >
-            JP
+            
           </text>
-        </svg>
+        </svg> */}
+        {/* <div> */}
+        <img
+          style={{ width: "70px", height: "70px", borderRadius: "50%" }}
+          src="./assets/logo2.gif"
+        />
+        {/* </div> */}
       </div>
       <div
         className="navButtons"
