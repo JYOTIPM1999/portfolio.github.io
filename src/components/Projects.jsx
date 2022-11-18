@@ -19,8 +19,10 @@ import {
   SiMongodb,
   SiGit,
   SiNetlify,
+  SiJsonwebtokens,
 } from "react-icons/si";
 
+import { TbBrandNextjs } from "react-icons/tb";
 export const Projects = () => {
   const { light } = useContext(ThemeContext);
 
@@ -42,7 +44,60 @@ export const Projects = () => {
       </p>
       <div className="projectCard" data-aos="fade-up">
         <div className="prCardImg">
-          <img src="./assets/tt.png" />
+          <img src="./hb.png" />
+        </div>
+        <div className="prCardContent">
+          <p>Heaven's Basket</p>
+          <p>
+            This is a E-commerce website where you can buy food products and
+            fresh vegetables and order them to your doorstep. this is
+            collaborative project made by 5 individuals in 4 days
+            <p>
+              <span>Tech Stack: </span>NextJS, ChakraUI, MongoDB, JWT Auth CSS
+              and Javascript.
+            </p>
+          </p>
+          <div className="prCardTs">
+            <TbBrandNextjs style={{ color: "#53c1de" }} className="tsIc" />
+            <SiChakraui
+              style={{
+                color: "#60c9ca",
+                background: "white",
+                borderRadius: "50%",
+              }}
+              className="tsIc"
+            />
+            <SiMongodb style={{ color: "green" }} className="tsIc" />
+            <SiJsonwebtokens style={{ color: "red" }} className="tsIc" />
+            <SiCss3 style={{ color: "#1c88c7" }} className="tsIc" />
+            <SiJavascript style={{ color: "tomato" }} className="tsIc" />
+          </div>
+          <div style={{ "--icBg": light ? "transparent" : "#0a192f" }}>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://annoyed-spark-4097-6yv7.vercel.app/"
+              target="_blank"
+            >
+              <button>
+                <FaEye className="tsBIc" /> Go live
+              </button>
+            </a>
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://github.com/JYOTIPM1999/Heaven-s-Basket/tree/main/heavens-basket"
+              target="_blank"
+            >
+              <button>
+                {" "}
+                <SiGithub className="tsBIc" /> View code
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="projectCard" data-aos="fade-up">
+        <div className="prCardImg">
+          <img src="./tt.png" />
         </div>
         <div className="prCardContent">
           <p>TrackingTime.co - Clone</p>
@@ -99,7 +154,7 @@ export const Projects = () => {
       </div>
       <div className="projectCard" data-aos="fade-up">
         <div className="prCardImg">
-          <img src="./assets/chatapp.png" />
+          <img src="./chatapp.png" />
         </div>
         <div className="prCardContent">
           <p>Chat App</p>
@@ -128,7 +183,11 @@ export const Projects = () => {
             <SiReactrouter style={{ color: "tomato" }} className="tsIc" />
           </div>
           <div style={{ "--icBg": light ? "transparent" : "#0a192f" }}>
-            <a style={{ textDecoration: "none" }} href="#" target="_blank">
+            <a
+              style={{ textDecoration: "none" }}
+              href="https://chat-app-made-by-jyoti.vercel.app/"
+              target="_blank"
+            >
               <button>
                 <FaEye className="tsBIc" /> Go live
               </button>
@@ -148,7 +207,7 @@ export const Projects = () => {
       </div>
       <div className="projectCard" data-aos="fade-up">
         <div className="prCardImg">
-          <img src="./assets/apple1.png" />
+          <img src="./apple1.png" />
         </div>
         <div className="prCardContent">
           <p>Apple TV - Clone</p>
@@ -197,7 +256,7 @@ export const Projects = () => {
       </div>
       <div className="projectCard" data-aos="fade-up">
         <div className="prCardImg">
-          <img src="./assets/bb1.png" />
+          <img src="./bb1.png" />
         </div>
         <div className="prCardContent">
           <p>Beauty-Bebo - Clone</p>

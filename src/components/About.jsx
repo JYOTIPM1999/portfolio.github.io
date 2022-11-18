@@ -44,7 +44,8 @@ export const About = () => {
               />
             </div>
             <p>
-              I enjoy creating things that live on the <span>Internet.</span>
+              I enjoy reading and teaching about security market on
+              <span> Internet.</span>
             </p>
           </div>
           <div id="mysitem">
@@ -58,9 +59,9 @@ export const About = () => {
             </div>
             <p>
               My interest in <span>Web Development </span>
-              started back in 2021 when I was introduced to{" "}
-              <span>Blogging</span>. I started creating some free blogs in{" "}
-              <span>Google Blogger.</span>
+              started back in 2021 when I was <span> trading </span>and looking
+              for new technology to
+              <span> automate my trades.</span>
             </p>
           </div>
           <div id="mysitem">
@@ -74,11 +75,9 @@ export const About = () => {
             </div>
             <p>
               {" "}
-              I started exploring the web for customizing the design of my blog
-              and for making it more interactive. I also started to learn how
-              these websites are made from scratch. That was when I came to know
-              about different technologies like <span>HTML, CSS, JS etc.</span>
-              &nbsp; used for creating websites.
+              I started exploring and learn how these websites are made from
+              scratch. That was when I came to know about different technologies
+              like <span>HTML, CSS, JS etc.</span> used for creating websites.
             </p>
           </div>
           <div id="mysitem">
@@ -116,7 +115,7 @@ export const About = () => {
           </div>
         </div>
         <div id="myimg">
-          <img src="./assets/myImg.png" />
+          <img src="./myImg.jpg" />
         </div>
       </div>
     </div>
